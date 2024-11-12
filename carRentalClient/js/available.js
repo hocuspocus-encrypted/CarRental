@@ -1,14 +1,28 @@
+<<<<<<< Updated upstream
+let availableCarsUrl = "http://localhost:8080/carRental-1.0/api/cars/available";//Url to get available cars
+let allCarsArray = []; // Declare an array to store the fetched data
+
+// Function to display list of cars on the webpage
+function displayCars(allCars) {
+  // Get the container element where you want to display the cars
+  var container = document.getElementById("available-list");
+=======
 let availableCarsUrl = "http://localhost:8080/carRental-1.0/api/cars/available";
 let allCarsArray = []; // Declare an array to store the fetched data
 
 function displayCars(allCars) {
   // Get the container element where you want to display the cars
   var container = document.getElementById("inventory-list");
+>>>>>>> Stashed changes
 
   // Clear the container before adding new cars (optional)
   container.innerHTML = "";
 
+<<<<<<< Updated upstream
+  console.log(allCars);
+=======
   console.log(allCars)
+>>>>>>> Stashed changes
 
   // Loop through the list of cars
   allCars.forEach(function(car) {
@@ -32,11 +46,19 @@ function displayCars(allCars) {
 
     // Create an image element for the car
     const img = document.createElement("img");
+<<<<<<< Updated upstream
+    img.src = "img/" + car.stockID + ".jpg"; // Adjust the image path relative to the HTML folder
+    img.alt = car.name; // Set the alt attribute to the name of the car
+    img.classList.add("car-image");
+
+    // Set the height of the image
+=======
     img.src = "img/"+car.stockID+".jpg"; // Adjust the image path relative to the HTML folder
     img.alt = car.name; // Set the alt attribute to the name of the car
     img.classList.add("car-image");
 
     //img.style.width = "100px";
+>>>>>>> Stashed changes
     img.style.height = "200px";
 
     // Append the image element to the car div
@@ -48,13 +70,52 @@ function displayCars(allCars) {
     hr.style.borderTop = "1px solid #333"; // Border style
     hr.style.marginTop = "10px"; // Top margin
 
+<<<<<<< Updated upstream
+    // Append the <hr> element to the container
+    container.appendChild(hr);
+
+    // Add a click event listener to the car div
+    carDiv.addEventListener("click", function() {
+      var name = prompt("Enter your Name:");
+      var email = prompt("Enter your email:");
+      // Make fetch request to the backend when a car is clicked
+      fetch("http://localhost:8080/carRental-1.0/api/cars/book/" + car.stockID, {
+        method: "GET",
+        headers: {
+          "Accept": "text/plain"
+        }
+      })
+        .then(response => {
+          if (!response.ok) {
+            throw new Error("Failed to fetch book details");
+          }
+          return response.text();
+        })
+        .then(data => {
+          console.log("Book details:", data);
+          alert("Hi "+name+" your car has been booked, please provide this email ("+email+") when picking up the car")
+          location.reload();
+          // You can perform any action with the fetched data here
+        })
+        .catch(error => {
+          console.error("Error:", error);
+        });
+    });
+
+=======
     // Append the <hr> element to a container (e.g., body)
     container.appendChild(hr);
 
+>>>>>>> Stashed changes
     // Append the car div to the container
     container.appendChild(carDiv);
   });
 }
+<<<<<<< Updated upstream
+
+// Fetch all cars from the server
+=======
+>>>>>>> Stashed changes
 function requestDataFromServer(url) {
   fetch(url)
     .then(response => {
@@ -75,6 +136,10 @@ function requestDataFromServer(url) {
     });
 }
 
+<<<<<<< Updated upstream
+// functions to be used when page is loaded
+=======
+>>>>>>> Stashed changes
 function onLoad(){
 
   requestDataFromServer(availableCarsUrl);
@@ -82,6 +147,8 @@ function onLoad(){
 }
 
 document.addEventListener('DOMContentLoaded', onLoad);
+<<<<<<< Updated upstream
+=======
 
 
 
@@ -160,3 +227,4 @@ document.addEventListener('DOMContentLoaded', onLoad);
 //   document.getElementById("mySidebar").style.display = "none";
 //   document.getElementById("myOverlay").style.display = "none";
 // }
+>>>>>>> Stashed changes

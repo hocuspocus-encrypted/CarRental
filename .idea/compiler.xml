@@ -9,8 +9,5 @@
         <module name="carRental" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="spamDetector" target="21" />
-    </bytecodeTargetLevel>
   </component>
 </project>

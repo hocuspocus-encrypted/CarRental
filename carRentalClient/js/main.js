@@ -1,6 +1,13 @@
+<<<<<<< Updated upstream
+let allCarsUrl = "http://localhost:8080/carRental-1.0/api/cars/all"; //Url to get all cars
+let allCarsArray = []; // Declare an array to store the fetched data
+
+// Function to display list of cars on the webpage
+=======
 let allCarsUrl = "http://localhost:8080/carRental-1.0/api/cars/all";
 let allCarsArray = []; // Declare an array to store the fetched data
 
+>>>>>>> Stashed changes
 function displayCars(allCars) {
   // Get the container element where you want to display the cars
   var container = document.getElementById("inventory-list");
@@ -36,7 +43,10 @@ function displayCars(allCars) {
     img.alt = car.name; // Set the alt attribute to the name of the car
     img.classList.add("car-image");
 
+<<<<<<< Updated upstream
+=======
     //img.style.width = "100px";
+>>>>>>> Stashed changes
     img.style.height = "200px";
 
     // Append the image element to the car div
@@ -55,6 +65,11 @@ function displayCars(allCars) {
     container.appendChild(carDiv);
   });
 }
+<<<<<<< Updated upstream
+
+// Fetch all cars from the server
+=======
+>>>>>>> Stashed changes
 function requestDataFromServer(url) {
   fetch(url)
     .then(response => {
@@ -75,6 +90,10 @@ function requestDataFromServer(url) {
     });
 }
 
+<<<<<<< Updated upstream
+// functions to be used when page is loaded
+=======
+>>>>>>> Stashed changes
 function onLoad(){
 
   requestDataFromServer(allCarsUrl);
@@ -85,6 +104,8 @@ document.addEventListener('DOMContentLoaded', onLoad);
 
 
 
+<<<<<<< Updated upstream
+=======
 // // Function to request data from the server to send to the client
 // function requestDataFromServer(url, updateFunction)
 // {
@@ -160,3 +181,4 @@ document.addEventListener('DOMContentLoaded', onLoad);
 //   document.getElementById("mySidebar").style.display = "none";
 //   document.getElementById("myOverlay").style.display = "none";
 // }
+>>>>>>> Stashed changes

@@ -69,6 +69,10 @@ body, html {
 
 .team{
   padding-top: 100px;
+<<<<<<< Updated upstream
+  justify-content: center;
+=======
+>>>>>>> Stashed changes
 }
 
 .car-form{
@@ -97,7 +101,11 @@ body, html {
 }
 
 .car-item {
+<<<<<<< Updated upstream
+  flex: 0 0 calc(30% - 20px); /* Adjust width to fit three items per row with margins */
+=======
   flex: 1 0 calc(33% - 20px);
+>>>>>>> Stashed changes
   margin: 20px;
   border: 1px solid #ddd;
   padding: 20px;
@@ -110,6 +118,37 @@ body, html {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
+<<<<<<< Updated upstream
+#deleteButton {
+  background-color: #ffd700;
+  color: #333333;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+#deleteButton:hover {
+  background-color: navajowhite;
+}
+
+#makeAvailableButton{
+  background-color: #ffd700;
+  color: #333333;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#makeAvailableButton:hover {
+  background-color: navajowhite;
+}
+
+=======
+>>>>>>> Stashed changes
 .car-item:hover{
   transform: scale(1.1);
   color: #ffd700;
@@ -161,6 +200,40 @@ body, html {
   background-color: navajowhite;
 }
 
+<<<<<<< Updated upstream
+#FormContainer {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+}
+#FormContainer button[id="addCarButton"] {
+  background-color: #ffd700;
+  color: #333333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#FormContainer button[id="addCarButton"]:hover {
+  background-color: navajowhite;
+}
+
+#carListContainer {
+  padding: 100px 20px 20px 20px;
+}
+
+
+.hidden {
+  display: none;
+}
+
+=======
+>>>>>>> Stashed changes
 h1 {
   font-size: 3em;
 }
