@@ -4,10 +4,6 @@
 This project is built to serve as a way for users to rent exotic cars in a streamlined way.
 This website also has admin features which allows someone with admin credentials to be able to add and delete cars from the selection.
 
-
-![This an image of an example of how the program is intended to work](./implementation.png)
-This an image of how the program works
-
 ### Car Rental Features
 
 For this Application, the following features were implemented:
