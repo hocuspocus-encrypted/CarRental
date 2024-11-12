@@ -1,0 +1,166 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-y: auto;
+  font-family: "Trebuchet MS", sans-serif;
+  background: #333333;
+}
+
+#video-background {
+  position: static;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+#video-content {
+  position: fixed;
+  z-index: 1;
+  color: #000;
+  text-align: center;
+  padding: 100px 20px 20px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 15%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%);
+  z-index: 9999;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  font-size: 20px;
+  padding-top: 30px;
+  margin: 0 10px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  padding: 10px;
+}
+
+.navbar a:hover {
+  color: #ffd700;
+}
+
+.team{
+  padding-top: 100px;
+}
+
+.car-form{
+  padding: 400px 500px 300px;
+  color: white;
+}
+
+.cars-container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 150px 20px 20px;
+}
+
+/*#inventory-list{*/
+/*  display: grid;*/
+/*  !*flex-wrap: wrap;*!*/
+/*  !*justify-content: center;*!*/
+/*  grid-template-columns: repeat(auto-fit, minmax(calc(33% - 20px), 1fr));*/
+/*  grid-gap: 20px;*/
+/*}*/
+
+.cars {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.car-item {
+  flex: 1 0 calc(33% - 20px);
+  margin: 20px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  background: gray;
+  text-shadow: black;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.car-item:hover{
+  transform: scale(1.1);
+  color: #ffd700;
+}
+
+.car-item img {
+  max-width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#addCarFormContainer {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#addCarFormContainer label {
+  display: block;
+  margin: 5px;
+  font-weight: bold;
+}
+
+#addCarFormContainer input[type="text"],
+#addCarFormContainer input[type="number"],
+#addCarFormContainer select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#addCarFormContainer button[type="submit"] {
+  background-color: #ffd700;
+  color: #333333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#addCarFormContainer button[type="submit"]:hover {
+  background-color: navajowhite;
+}
+
+h1 {
+  font-size: 3em;
+}
